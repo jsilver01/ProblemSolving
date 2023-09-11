@@ -1,18 +1,12 @@
 def solution(s):
-    answer = True
-    count = 0
-    length = len(s)
-    for i in range (length):
-        if s[i] == '(':
-            count +=1
-            
+    stack = []
+    for char in s:
+        if not stack:
+            stack.append(char)
         else:
-            count -=1
-            
-        if count < 0:
-            return False
-        
-    if count != 0:
-        return False
-    
-    return True
+            top = stack.pop()
+            if top+char != '()':
+                stack.append(top)
+                stack.append(char)
+
+    return len(stack)==0
