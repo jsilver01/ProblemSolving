@@ -7,14 +7,7 @@ public class Main {
         int N = scan.nextInt();
         int M = scan.nextInt();
 
-        int max = N;
-        int min = M;
-        if(N < M){
-            max = M;
-            min = N;
-        }
-
-        int total = (max-1) + max*(min-1);
+        int total = (N-1) + N*(M-1);
         System.out.println(total);
     }
 }
