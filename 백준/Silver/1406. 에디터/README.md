@@ -1,5 +1,7 @@
 # [Silver II] 에디터 - 1406 
 
+### 시간초과가 날 때에는 printf 문말고도  BufferWriter 도 활용해보자!
+
 [문제 링크](https://www.acmicpc.net/problem/1406) 
 
 ### 성능 요약
